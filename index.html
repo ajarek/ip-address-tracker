@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title> IP Address Tracker</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin="" />
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <!-- div.card po opłaceniu do wycięcia -->
+      <div class="card">
+        <div class="item">
+          <p>ip address</p>
+          <h5>89.64.124.79
+        </div>
+        <div class="item">
+          <p>location</p>
+          <h5>PL Kołobrzeg</h5>
+        </div>
+        <div class="item">
+          <p>timezone</p>
+          <h5>UTC-01</h5>
+        </div>
+        <div class="item">
+          <p>isp</p>
+          <h5>UPC Polska Sp. z o.o.</h5>
+        </div>
+      </div>
+      <!-- end -->
+      <div class="h1">
+        <h1>IP Address Tracker</h1>
+      </div>
+      <div class="wrapper">
+        <input type="text" name="" id="" placeholder="192.212.174.101">
+        <button aria-label="icon-arrow"><img src="./images/icon-arrow.svg" alt="arrow"></button>
+      </div>
+    </header>
+    <div id="map"></div>
+  </div>
+  <script src="script.js"></script>
+  </div>
+</body>
+
+</html>

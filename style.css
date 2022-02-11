@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+
+:root {
+    --Very-Dark-Gray: hsl(0, 0%, 17%);
+    --Dark-Gray: hsl(0, 0%, 59%);
+    --White: hsl(0, 0%, 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    position: relative;
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background: url('./images/pattern-bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 1rem;
+}
+
+header h1 {
+    color: var(--White);
+    letter-spacing: 0.1rem;
+    margin-bottom: 1.5rem;
+}
+
+.wrapper {
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
+    width: 24rem;
+    height: 3rem;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 0.7rem;
+    overflow: hidden;
+}
+
+.wrapper input {
+    width: 80%;
+    height: 100%;
+    border: none;
+    padding: 0 1rem;
+    outline: none;
+    font-size: 1.125rem;
+    color: var(--White);
+    color: var(--Very-Dark-Gray);
+    text-align: center;
+}
+
+.wrapper button {
+    width: 20%;
+    height: 100%;
+    border: solid 1px var(--Very-Dark-Gray);
+    background: var(--Very-Dark-Gray);
+    outline: none;
+    cursor: pointer;
+    font-size: 1.125rem;
+}
+
+#map {
+    width: 100%;
+    height: 60vh;
+}
+
+.card {
+    position: absolute;
+    bottom: -8vh;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70vw;
+    height: 16vh;
+    background: var(--White);
+    z-index: 1000;
+    border-radius: 0.7rem;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
+    display: flex;
+}
+
+.card .item {
+    width: 25%;
+    height: 100%;
+    border-right: 1px solid var(--Dark-Gray);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 1rem;
+}
+
+.card .item p {
+    text-transform: uppercase;
+    font-size: 0.8rem;
+}
+
+.card .item h5 {
+    font-size: 1.2rem;
+}
+
+@media screen and (max-width: 768px) {
+    .card {
+        width: 65vw;
+        height: 40vh;
+        flex-direction: column;
+        bottom: -30vh;
+    }
+
+    .card .item {
+        width: 100%;
+        height: 25%;
+        border-right: none;
+        border-bottom: 1px solid var(--Dark-Gray);
+        padding: 0 1rem;
+        align-items: center;
+    }
+
+    .card .item h5 {
+        font-size: 1rem;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .wrapper {
+        width: 100%;
+    }
+}
